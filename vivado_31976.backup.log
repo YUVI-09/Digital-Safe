@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  1 14:38:42 2023
+# Process ID: 31976
+# Current directory: C:/Users/Asus/Desktop/Digital_Safe
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13104 C:\Users\Asus\Desktop\Digital_Safe\Digital_Safe.xpr
+# Log file: C:/Users/Asus/Desktop/Digital_Safe/vivado.log
+# Journal file: C:/Users/Asus/Desktop/Digital_Safe\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Downloads/DigitalDesignLabs/Digital_Safe' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 786.977 ; gain = 159.680
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon May  1 14:39:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon May  1 14:40:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon May  1 14:41:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+current_hw_device [get_hw_devices xc7z020_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 1826.473 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Xilinx/1234-tulA.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon May  1 14:59:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon May  1 15:00:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon May  1 15:01:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+current_hw_device [get_hw_devices xc7z020_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_0]
+set_property PROGRAM.FILE {C:/Users/Asus/Desktop/Digital_Safe/Digital_Safe.runs/impl_1/digital_Safe.bit} [get_hw_devices xc7z020_0]
+program_hw_devices [get_hw_devices xc7z020_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_0] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+open_project C:/Users/Asus/Desktop/adder/adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1869.082 ; gain = 29.070
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon May  1 16:06:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Asus/Desktop/adder/adder.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon May  1 16:06:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Asus/Desktop/adder/adder.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon May  1 16:08:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/Asus/Desktop/adder/adder.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  1 16:11:14 2023...
